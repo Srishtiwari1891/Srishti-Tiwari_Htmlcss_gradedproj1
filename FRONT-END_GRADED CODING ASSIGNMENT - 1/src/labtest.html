@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lab Test
+    </title>
+    <link rel="stylesheet" href="../resources/css/style.css">
+</head>
+
+<body>
+
+    <section class="labtest__main">
+        <div class="labtest__form">
+            <!-- <div class="labtest__formbody"> -->
+            <form action="submit" class="labtest__formbody">
+                <label>
+                    <h2>1. Your Contact Detail</h2>
+                </label>
+                <input type="text" placeholder="Full Name" class="labtest__input" />
+                <input type="text" placeholder="Patient ID if exists" class="labtest__input" />
+                <input type="text" placeholder="Contact Number" class="labtest__input" />
+                <input type="text" placeholder="Email ID" class="labtest__input" />
+                <label>
+                    <h2>2. Address</h2>
+                </label>
+                <input type="text" placeholder="H-No" class="labtest__input" />
+                <input type="text" placeholder="Street" class="labtest__input" />
+                <input type="text" placeholder="Area" class="labtest__input" />
+                <label>
+                    <h3>District</h3>
+                </label>
+                <select id="labtest__district" required>
+                    <option value="choose">Choose</option>
+                    <option value="gandhinagar">Gandhinagar</option>
+                    <option value="ahmedabad">Ahmedabad</option>
+                </select>
+                <label class="labtest__checkbox">
+                    <h2>3. Choose Test Type</h2>
+                </label>
+                <input type="checkbox" class="labtest__checkbox">
+                <label class="labtest__checkbox">CBC</label><br>
+                <input type="checkbox" class="labtest__checkbox">
+                <label class="labtest__checkbox">Complete Urine</label><br>
+                <input type="checkbox" class="labtest__checkbox">
+                <label class="labtest__checkbox">Lipid Profile</label><br>
+                <input type="checkbox" class="labtest__checkbox">
+                <label class="labtest__checkbox">Thyroid Stimulating Hormone(TSH)</label><br>
+                <input type="checkbox" class="labtest__checkbox">
+                <label class="labtest__checkbox">Glucose Test</label>
+                <label>
+                    <h3>4. Do you want a hard copy of the report also?</h3>
+                </label>
+                <input type="radio" class="labtest__checkbox"> <label class="labtest__checkbox">Yes</label><br>
+                <input type="radio" class="labtest__checkbox"> <label class="labtest__checkbox">No</label>
+                <label>
+                    <h3>5. Select Your Comfortable Date and Time</h3>
+                </label>
+                <input type="datetime-local" id="labtest__datetime">
+            </form>
+            <!-- </div> -->
+            <div class="labtest__image">
+                <img src="../resources/images/Lab-Test/lab-test.jpg" />
+            </div>
+        </div>
+    </section>
+    <div id="labtest__buttons">
+        <input type="reset" placeholder="Reset" />
+        <input type="submit" placeholder="Submit" />
+    </div>
+</body>
+
+</html>
